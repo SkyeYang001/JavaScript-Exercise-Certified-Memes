@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    background-color: #D9D9D9;
+}
+
+#Web {
+    display: flex;
+}
+
+.Certification-Menu {
+    display: flex;
+    flex-direction: column;
+    width: 45%
+}
+
+.Certification-Paper {
+    display: flex;
+    justify-content: end;
+    width: 40%;
+}

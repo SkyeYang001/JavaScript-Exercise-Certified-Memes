@@ -2,9 +2,24 @@ body {
     margin: 0;
     padding: 0;
 }
+
 header {
-    width: 100%;
+    max-width: 100%;
     background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 1in;
+    margin-top: 25px;
+    background-color: #D9D9D9;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 #Web {
@@ -14,11 +29,21 @@ header {
 .Certification-Menu {
     display: flex;
     flex-direction: column;
-    width: 45%
+    width: 50%;
+    padding-left: 3%;
+}
+
+.Certification-Generated {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 50%;
 }
 
 .Certification-Paper {
-    display: flex;
-    justify-content: end;
-    width: 40%;
+    width:8.5in;
+    height:11in;
+    border: solid 1px;
+    border-color: black;
+    background-color:;
 }

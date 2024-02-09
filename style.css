@@ -45,5 +45,28 @@ footer {
     height:11in;
     border: solid 1px;
     border-color: black;
-    background-color:;
+}
+
+.a {
+    width:8.5in;
+    height:11in;
+    border: solid 1px;
+    border-color: black;
+    color:blue;
+}
+
+.b {
+    width:8.5in;
+    height:11in;
+    border: solid 1px;
+    border-color: black;
+    color:red;
+}
+
+.c {
+    width:8.5in;
+    height:11in;
+    border: solid 1px;
+    border-color: black;
+    color:green;
 }

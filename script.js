@@ -5,44 +5,47 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(eventData.target);
         var formData = new FormData(eventData.target);
         formData = Object.fromEntries(formData);
-  
+        changeCert = submitCert(eventData.target.value);
 
         let presentOutput = document.getElementById('Certification-Present');
         let nameOutput = document.getElementById('Certification-Name');
         let detailOutput = document.getElementById('Certification-Details');
         let iconOutput = document.getElementById('Certification-Icon');
         let ownerOutput = document.getElementById('Certification-Owner');
-        let dataOutput = document.getElementById("Certification-Date");
+ 
 
-        presentOutput.innerText = formData.option;
+        presentOutput.innerText = `${formData.option}`;
         nameOutput.innerText = formData.name;
-        detailOutput.innerText = formData.option;
+        detailOutput.innerText = `${formData.option}`;
         iconOutput = formData.option;
-        ownerOutput.innerText = formData.option;
-        
+        ownerOutput.innerText = `${formData.option}`;
+        /*let dateOutput = document.getElementById("Certification-Date");
         let theDate = new Data().toLocaleDataString('en-us', {weekday: "long", year:"numeric", month:"short", day:"numeric"})
-        dateOutput.innerText = theDate;
+        dateOutput.innerText = `${theDate}`; */
+
       });
-
-
-    function changeCertification(value){
+      
+    function submitCert(value){
         let option = document.getElementById('Certification-Paper');
         option.classList = "";
         switch(value){
             case 'A':
-                option.classList.add('A');
+                option.classList.add('a');
+                console.log('a');
             break;
             case 'B':
-                option.classList.add('B');
+                option.classList.add('b');
+                console.log('b');
             break;
             case 'C':
-                option.classList.add('C');
+                option.classList.add('c');
+                console.log('c');
             break;
         }
     }
 
-if ( dicument.getElementById('print') !== !null) {
-    let printelement = document.getElementById('print');
+if ( document.getElementById('Certification-Paper') !== !null) {
+    let printelement = document.getElementById('Certification-Paper');
     printelement.addEventListener('click', function(e) {
         window.print();
         console.log('invoke print');

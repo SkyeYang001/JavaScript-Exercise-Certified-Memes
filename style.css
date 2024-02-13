@@ -45,6 +45,14 @@ footer {
     height: 11in;
     border: solid 1px;
     border-color: black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .x {
@@ -55,7 +63,22 @@ footer {
     visibility: hidden;
 }
 
-.a #Certification-Name, .b #Certification-Name, .c #Certification-Name {
+.x #Certification-Present {
+    font-size:2em;
+    font-style: italic;
+}
+
+.x #Certification-Details {
+    font-size:23px;
+    font-weight: bold;
+}
+
+.x #Certification-Owner {
+    font-size:22px;
+    font-weight: bold;
+}
+
+.x #Certification-Name, .a #Certification-Name, .b #Certification-Name, .c #Certification-Name {
     font-size:4em;
 }
 
@@ -103,7 +126,7 @@ footer {
 
 .a #Certification-Icon::after {
     visibility: visible;
-    content:url(icons/fighting\ eggs\ icon.png)
+    content:url(icons/fighting\ eggs\ icon.png);
 }
 
 .a #Certification-Owner::after {
@@ -157,7 +180,7 @@ footer {
 
 .b #Certification-Icon::after {
     visibility: visible;
-    content:url(icons/poop\ sniffers\ icon.png)
+    content:url(icons/poop\ sniffers\ icon.png);
 }
 
 .b #Certification-Owner::after {
@@ -211,7 +234,7 @@ footer {
 
 .c #Certification-Icon::after {
     visibility: visible;
-    content:url(icons/heavy\ weapon\ icon.png)
+    content:url(icons/heavy\ weapon\ icon.png);
 }
 
 .c #Certification-Owner::after {
@@ -219,4 +242,10 @@ footer {
     visibility: visible;
     font-size:22px;
     font-weight: bold;
+}
+
+@media print {
+    #header, #menu, #Generated-Text {
+        display:none;
+    }
 }

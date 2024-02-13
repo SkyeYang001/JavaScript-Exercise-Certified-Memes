@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    if (document.getElementById('Certification-Paper') !== !null) {
+/*    if (document.getElementById('Certification-Paper') !== !null) {
 
         let printelement = document.getElementById('Certification-Paper');
 
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
         //in html -> onclick="windowprint()"
     }
 
-    /*if (document.getElementById("option") = document.getElementById("A")) {
+    if (document.getElementById("option") = document.getElementById("A")) {
         const presentOutputA = document.getElementById("Certification-Present");
         const nameOutputA = document.getElementById("Certification-Name");
         const detailsOutputA = document.getElementById("Certification-Details");

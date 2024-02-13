@@ -41,32 +41,182 @@ footer {
 }
 
 .Certification-Paper {
-    width:8.5in;
-    height:11in;
+    width: 8.5in;
+    height: 11in;
     border: solid 1px;
     border-color: black;
+}
+
+.x {
+    width: 8.5in;
+    height: 11in;
+    border: solid 1px;
+    border-color: black;
+    visibility: hidden;
+}
+
+.a #Certification-Name, .b #Certification-Name, .c #Certification-Name {
+    font-size:4em;
 }
 
 .a {
-    width:8.5in;
-    height:11in;
+    width: 8.5in;
+    height: 11in;
     border: solid 1px;
     border-color: black;
-    color:blue;
+    color: blue;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.a #Certification-Present {
+    visibility: hidden;
+}
+
+.a #Certification-Details {
+    visibility: hidden;
+}
+
+.a #Certification-Icon {
+    visibility: hidden;
+}
+
+.a #Certification-Owner {
+    visibility: hidden;
+}
+
+.a #Certification-Present::after {
+    content: "Certification of Fighting Eggs presented to";
+    visibility: visible;
+    font-size:2em;
+    font-style: italic;
+}
+
+.a #Certification-Details::after {
+    content: "This certificated is for the most epic Fighting Eggs in Fighting Eggs Battle World.";
+    visibility: visible;
+    font-size:23px;
+    font-weight: bold;
+}
+
+.a #Certification-Icon::after {
+    visibility: visible;
+    content:url(icons/fighting\ eggs\ icon.png)
+}
+
+.a #Certification-Owner::after {
+    content: "Company: Fighting Eggs Coalition";
+    visibility: visible;
+    font-size:22px;
+    font-weight: bold;
 }
 
 .b {
-    width:8.5in;
-    height:11in;
+    width: 8.5in;
+    height: 11in;
     border: solid 1px;
     border-color: black;
-    color:red;
+    color: red;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.b #Certification-Present {
+    visibility: hidden;
+}
+
+.b #Certification-Details {
+    visibility: hidden;
+}
+
+.b #Certification-Icon {
+    visibility: hidden;
+}
+
+.b #Certification-Owner {
+    visibility: hidden;
+}
+
+.b #Certification-Present::after {
+    content: "Certification of being a Poop Sniffer presented to";
+    visibility: visible;
+    font-size:2em;
+    font-style: italic;
+}
+
+.b #Certification-Details::after {
+    content: "Thanks for being a Poop Sniffer. You were great with your sniffing job.";
+    visibility: visible;
+    font-size:23px;
+    font-weight: bold;
+}
+
+.b #Certification-Icon::after {
+    visibility: visible;
+    content:url(icons/poop\ sniffers\ icon.png)
+}
+
+.b #Certification-Owner::after {
+    content: "Company: Poop Sniffers Gang";
+    visibility: visible;
+    font-size:22px;
+    font-weight: bold;
 }
 
 .c {
-    width:8.5in;
-    height:11in;
+    width: 8.5in;
+    height: 11in;
     border: solid 1px;
     border-color: black;
-    color:green;
+    color: green;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.c #Certification-Present {
+    visibility: hidden;
+}
+
+.c #Certification-Details {
+    visibility: hidden;
+}
+
+.c #Certification-Icon {
+    visibility: hidden;
+}
+
+.c #Certification-Owner {
+    visibility: hidden;
+}
+
+.c #Certification-Present::after {
+    content: "Certification of being a Heavy Weapon User presented to";
+    visibility: visible;
+    font-size:2em;
+    font-style: italic;
+}
+
+.c #Certification-Details::after {
+    content: "Heavy Weapon Users are great dragon killers. The finest trident is proud.";
+    visibility: visible;
+    font-size:23px;
+    font-weight: bold;
+}
+
+.c #Certification-Icon::after {
+    visibility: visible;
+    content:url(icons/heavy\ weapon\ icon.png)
+}
+
+.c #Certification-Owner::after {
+    content: "Company: Heavy Weapon Crafts";
+    visibility: visible;
+    font-size:22px;
+    font-weight: bold;
 }
